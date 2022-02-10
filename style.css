@@ -1,0 +1,146 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat Alternates', sans-serif;  
+    
+}
+header{
+    padding: 8vh 0 0 0;
+    background-color: rgba(52, 73, 94);
+    max-height: 60vh;
+    width: 100%;
+    text-align: center;
+    color: rgb(247, 245, 239);
+}
+body{
+    background-color: rgb(247, 245, 239);
+}
+footer{
+    
+    background-color: rgba(52, 73, 94);
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    color: rgb(247, 245, 239);
+}
+
+p{
+    text-align: center;
+    margin: 50px;
+}
+
+h1{
+    padding-top: calc(2vh);
+    text-align: center;
+    font-size: 6vmin;
+}
+h2{
+    padding-top: calc(2vh);
+    padding-bottom: 20px;
+    text-align: center; 
+    font-size: 4vmin;
+}
+.imgMia{
+    transition-duration: 0.5s;
+    border-radius: 50%;
+    border-style: none;
+    width: 28vmin;
+    height: 28vmin;
+    
+}
+.imgMia:hover{
+    filter: brightness(110%);
+    box-shadow: 0 0px 15px rgba(247, 245, 239);
+}
+
+.nav{
+    background-color: rgb(52, 73, 94);
+    position: fixed;
+    height: 6vh;
+    width: 100%;
+    opacity: 85%;
+}
+nav ul{
+    text-align: center;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 6vh;
+    margin: 0 5px;
+}
+nav ul li a{
+    
+    font-weight: 400;
+    color: rgb(213, 209, 255); 
+    font-size: 18px;
+    padding: 0px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    transition: 1s;
+}
+nav ul li a:hover{
+    background-color: none;
+    color: rgb(163, 159, 197);
+    text-decoration: overline 2px rgb(213, 209, 255);
+}
+
+.checkbtn{
+    font-size: 18px;
+    color: beige;
+    float: right;
+    line-height: 6vh;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media only screen and (max-width: 835px) {
+    .imgCheck{
+        width: 6vh;
+        height: 6vh;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    a:hover{
+        padding-left: 20px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background-color: rgb(52, 73, 94);
+        top: 6vh;
+        left: 100%;
+        text-align: justify;
+        transition: all 1s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    
+    #check:checked ~ ul{
+        left: 50%;
+        text-align: justify;
+        padding-left: 10%;
+    }
+
+    body{
+        background-color: rgb(233, 227, 210);
+    }
+    
+}
+
